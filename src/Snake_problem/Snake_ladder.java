@@ -19,6 +19,13 @@ public class Snake_ladder
 		int var1 = rollDie();
 		int var2 = optionValue();
 		
+		switch(var2)
+		{
+		case 1:
+			System.out.println("No Play");
+			break;
+		}
+		
 		
 		System.out.println("Player position: " + var0);
 		return var0;
