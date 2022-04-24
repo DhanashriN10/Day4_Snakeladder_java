@@ -1,5 +1,10 @@
 package Snake_problem;
 
+import java.util.Hashtable;
+import java.util.Random;
+import java.util.Scanner;
+
+
 public class Snake_ladder
 {
 	public static int rollDie() 
@@ -23,6 +28,17 @@ public class Snake_ladder
 		{
 		case 1:
 			System.out.println("No Play");
+			break;
+		case 2:
+			if (var0 + var1 > 100) 
+			{
+				System.out.println("Sorry, you must reach exactly 100 or lower position with the die roll");
+			} 
+			else
+			{
+				System.out.println("Ladder, so moving ahead by die value " + var1);
+				var0 += var1;
+			}
 			break;
 		}
 		
