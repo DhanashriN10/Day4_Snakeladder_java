@@ -40,6 +40,17 @@ public class Snake_ladder
 				var0 += var1;
 			}
 			break;
+		case 3:
+			if (var0 < var1) 
+			{
+				System.out.println("Snake, but stops at starting position");
+				var0 = 0;
+			} 
+			else
+			{
+				System.out.println("Snake, moving backward by die value " + var1);
+				var0 -= var1;
+			}
 		}
 		
 		
